@@ -1,0 +1,373 @@
+body {
+  background-color: white;
+}
+@font-face {
+  font-family: logoFont;
+  src: url("../fonts/hemi head bd it.ttf");
+}
+
+@font-face {
+  font-family: cabin;
+  src: url("../fonts/Cabin-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav {
+  /*background-color: #2b4ffd;*/
+  height: 80px;
+  width: 100%;
+  padding-left: 60px;
+}
+
+a {
+  font-family: cabin;
+}
+
+.logoLabel {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 10px;
+  font-weight: bold;
+  font-family: cabin;
+}
+
+#logoImg {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.linkicon {
+  margin-right: -15px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+ul {
+  padding-top: 20px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  background-color: #6e6767;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.navcontainer {
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay {
+  z-index: 9;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item-left {
+  flex: 50%;
+}
+
+.flex-item-right {
+  flex: 50%;
+}
+
+.whitefont {
+  color: white;
+  font-style: normal;
+}
+
+* .mainlabel {
+  font-family: cabin;
+  font-weight: bold;
+  color: white;
+  font-size: 70px;
+}
+
+@media (max-width: 1450px) and (min-width: 858px) {
+  .labeloflink {
+    display: none;
+  }
+  .cabintest {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 952px) {
+  .logoLabel {
+    font-size: 30px;
+    padding-left: 10px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .informationspanel {
+    padding-top: 0px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transform: all 0.5s;
+  }
+  nav {
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .linkicon {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 0;
+    height: 0;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    padding-left: 0px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover {
+    background: none;
+    color: rgb(114, 105, 105);
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .logoLabel {
+    display: none;
+  }
+  .flex-item-right,
+  .flex-item-left {
+    flex: 100%;
+  }
+  .flex-item-right {
+    margin-top: 30px;
+  }
+}
+
+.footer-basic {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #4b4c4d;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+.cabintest {
+  font-family: cabin;
+}
+
+.informationspanel {
+  padding-top: 50px;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.flex-item-left {
+  padding-top: 150px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  flex: 50%;
+}
+
+.whitebutton {
+  margin-top: 40px;
+  font-weight: normal;
+  font-size: 25px;
+  width: 250px;
+  height: 56px;
+  font-family: cabin;
+  background-color: white;
+  color: black;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 10px;
+}
+
+.blacktext {
+  color: black;
+}
+
+.lastbutton {
+  font-weight: normal;
+  font-size: 35px;
+  font-family: cabin;
+  border-width: 0px;
+  border-color: black;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 10px;
+  background-color: #2b4ffd;
+  color: white;
+  box-shadow: 0px 10px 20px 0px #98aaff;
+}
+
+.loginbutton {
+  padding: -40px;
+  font-size: 18px;
+  width: 150px;
+  height: 50px;
+  font-family: cabin;
+  font-weight: normal;
+  background-color: #2b4ffd;
+  color: rgb(255, 255, 255);
+  border-width: 1px;
+  border-color: white;
+  border-radius: 10px;
+}
+
+.loginform {
+  padding-top: 100px;
+  margin-left: 220px;
+  margin-right: 220px;
+}
+
+.textinnput {
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  font-family: cabin;
+  font-weight: bold;
+}
+
+#exampleInputPassword1 {
+  width: 100%;
+  height: 70px;
+  font-family: cabin;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.biggerfont {
+  font-size: 20px;
+}

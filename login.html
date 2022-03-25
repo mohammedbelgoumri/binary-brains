@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/ionicons.min.css">
+    <title>Login</title>
+</head>
+<body  class="navcontainer">
+    <div class="box">
+        <svg width="1920" height="992" viewBox="0 0 1920 992" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1847.39 754.804C1847.39 754.804 1823.89 888.402 1688.17 828.385C1552.41 768.126 1528.12 687.127 1309.08 807.707C1090.05 928.287 1004.62 938.258 938.755 855.335C872.888 772.413 756.62 661.771 560.358 710.019C363.914 758.299 206.896 462.915 54.7078 437.343C-97.5224 411.529 -173.781 586.417 -173.781 586.417L108.34 2199.28L2786.67 1730.79C2786.67 1730.79 2674.99 1496.32 2508.36 1448.18C2341.54 1400.06 2354.69 1345.57 2318.71 1222.37C2282.54 1099.21 1972.67 1065.93 1960.95 877.849C1948.79 689.349 1847.39 754.804 1847.39 754.804Z" fill="#5DBBFE"/>
+            <path d="M-35.4362 581.168C-21.0398 565.441 256.32 429.649 390 652.039C523.681 874.429 621.251 860.211 771.349 848.976C921.447 837.742 877.363 848.561 1063.92 947.75C1250.48 1046.94 1335.19 963.491 1446.95 896.808C1558.52 830.157 1768.75 906.3 1904.76 784.355C2040.77 662.411 2074.33 817.628 2074.33 817.628C2074.33 817.628 2055.78 961.499 2195.9 1035.4C2336.2 1109.27 2294.75 1229.96 2359.63 1398.34C2424.55 1566.98 2804.19 1767.06 2804.19 1767.06L160.147 2060.18L-35.4362 581.168Z" fill="#2798FE"/>
+            <path d="M-28.4382 611.857C-28.4382 611.857 67.0637 870.311 277.693 864.241C488.322 858.171 493.108 848.358 592.88 956.305C692.466 1064.28 746.883 1125.03 878.9 1056.55C1010.92 988.066 1115.56 862.571 1244.8 926.897C1373.86 991.256 1652.35 1090 1855.54 712.362C2058.74 334.729 2060.5 849.865 2060.5 849.865C2060.5 849.865 1911.87 1067.17 2205.11 1187.94C2309.18 1234.11 2326.48 1422.64 2378.39 1537.93C2430.12 1653.26 2721.87 1842 2721.87 1842C2721.87 1842 830.965 2366.62 818.783 2371.31C806.6 2376.01 6.49007 2034.88 6.49007 2034.88L-28.4382 611.857Z" fill="#2B4FFD"/>
+        </svg>
+            
+    </div> 
+        
+    <div style="background-color: #2B4FFD;" class="box overlay">
+        <nav>
+            <input type="checkbox" id = "check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <img src="images/logo.png" alt="logo" id="logoImg">
+            <label class="logoLabel blacktext">ORIENT</label>
+            <ul>
+                <li><a class=" whitefont blacktext" href="#">About</a></li>   
+                <li><button type="button" class="loginbutton">Connection</button></li>
+            </ul>
+        </nav>
+
+        <div class="flex-container informationspanel">
+            <div class="flex-item-left">
+                <div class="align-self-start"><h1 class="cabintest mainlabel blacktext">Contents de vous revoir</h1></div>
+            </div>
+            <div style="border-left: 3px solid rgb(146, 146, 146);height: 480px;position: absolute;left: 50%;margin-left: 150px;margin-top: 130px;"></div>
+            <div class="flex-item-right ms-auto">
+                <form class="loginform">
+                    <h1 style="font-size: 50px;font-weight: bold;padding-bottom: 30px;" class="cabintest  blacktext">S’identifier</h1>
+                    <div style="padding-bottom: 30px;" class="form-group">
+                      <small style="font-size: 25px;" id="emailHelp" class="form-text text-muted cabintest">Email</small>
+                      <input style="border-radius: 10px;" type="email" class="form-control textinnput" id="exampleInputEmail1"  placeholder="example@example.com">
+                    </div>
+                    <div style="padding-bottom: 10px;" class="form-group">
+                        <small style="font-size: 25px;" id="passwordHelp" class="form-text text-muted cabintest biggerfont">Password</small>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label cabintest" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <div style="text-align: center;padding-top: 20px;">
+                        <button style="font-size: 25px;width: 100%;height: 60px;" type="submit" class="loginbutton">Se connecter </button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
